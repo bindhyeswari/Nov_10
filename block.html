@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--http://www.w3schools.com/html/html_elements.asp-->
+    <style>
+        div {
+            background-color: #56806a; /* same */
+            width: 200px; /* inline elements are not supposed to have a width */
+            height: 60px; /* inline elements are not supposed to have a height */
+            padding: 16px 18px 24px; /* same */
+            margin: 16px 18px 24px; /* margin */
+            text-align: center; /* same */
+            border: 1px solid black; /* same */
+            /* CSS3 - available in the latest browsers only */
+            /*display: flex;
+            align-items: center;
+            justify-content: center;*/
+
+            display: inline-block; /* difference between an inline and an inline-block */
+        }
+
+        p {
+            background-color: red;
+        }
+
+        header {
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <span>sdfg</span>
+    <div>
+        I am a div element.
+    </div>
+    <p>
+        Block element - paragraph
+    </p>
+    <header>
+        Block element
+    </header>
+
+    <span>
+        test
+    </span>
+    <!--http://www.w3schools.com/html/html_tables.asp-->
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>ID</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="vertical-align: middle;" >Chris</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Repala</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
