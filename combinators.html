@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+        /* inline id class/attribute element */
+
+        div {
+            background-color: red;
+        }
+
+        div > * { /* Child selector */
+            color: white;
+        }
+
+        div span { /* Descendant selector */ /* 0 0 0 2 */
+        /* Selects all span elements which are descendants of the div element */
+            color: green;
+        }
+
+        div, span { /* Grouping selector */
+            font-family: 'Courier New';
+        }
+
+        li.repala { /* 0 0 1 1 */
+            color: red;
+        }
+
+        li.repala + li { /* Find the single adjacent (subsequent) li element for the li.repala element */
+         /*   font-weight: bold;*/
+        }
+
+        li.repala:hover + li { /* Find the single adjacent (subsequent) li element for the li.repala element */
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Jacob</li>
+        <li class="repala">Repala</li>
+        <li>Mishra</li>
+        <li>Chris</li>
+    </ul>
+
+    <div>
+        Div 1 - parent
+        <div>
+            Child of Div 1 - Div 2
+        </div>
+        <div>
+            Child of Div 1 - Div 3
+        </div>
+    </div>
+
+    <div>
+        <div>
+            Child
+            <div>
+                Grandchild
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span>Span 1
+            <span>
+                Span 2
+            </span>
+        </span>
+    </div>
+
+</body>
+</html>

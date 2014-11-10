@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        #green { /* 0 1 0 0    */
+            color: green;
+        }
+
+        .blue { /* 0 0 1 0  */
+            color: blue;
+        }
+
+        div { /* 0 0 0 1 */
+            font: 200 1em 'Helvetica Neue';
+            color: red;
+        }
+
+        div {
+            color: green;
+        }
+
+        body > div {
+            background-color: green;
+        }
+
+        div {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 0 0 0 0 -->
+    <!-- inline id class/attribute element -->
+    <div>
+        asdfasdf
+    </div>
+    <div id="green" class="blue">
+        <span>
+            asdfasdfsadf
+        </span>
+    </div>
+</body>
+</html>
