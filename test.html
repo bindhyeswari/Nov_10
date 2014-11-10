@@ -33,6 +33,21 @@
         #actions {
             display:none;
         }
+
+        #menu_item_actions:hover > #actions {
+            display: block;
+        }
+
+        #actions > li {
+            color: red;
+        }
+
+        #actions > li:hover {
+            color: green;
+            cursor: pointer;
+        }
+
+
     </style>
 </head>
 <body>
@@ -40,13 +55,11 @@
     <div style="background-color: red !important;">
         asdfsadf
     </div>
-
-
     <nav>
         <ul>
             <li class="menu_item">Home</li>
             <li class="menu_item">About</li>
-            <li class="menu_item">
+            <li class="menu_item" id="menu_item_actions">
                 Actions
                 <ul id="actions">
                     <li>Signup</li>
